@@ -7,10 +7,10 @@ const db = 'mongodb://localhost:27017';
 const connectMongoDB = () => {
 	try {
 		connect(db, {
-			useNewUrlParser: true,
-			useCreateIndex: true,
+			useNewUrlParser: false,
+			useCreateIndex: false,
 			useFindAndModify: false,
-			useUnifiedTopology: true
+			useUnifiedTopology: false
         });
 
 		console.log('MongoDB Connected...');
